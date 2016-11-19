@@ -33,12 +33,24 @@
 			<p><i class="fa fa-newspaper-o" aria-hidden="true"></i>Search Parameters</p>
 		</div> 
 		<div class="row" id="search">
-
 			<form id="searchForm">
 
+				<!-- This is the main search term -->				
 				<label for="searchInput">Search Term:</label>
-
+				<br>
 				<input type="text" name="searchInput">
+				<br>
+
+				<!-- This is for the number of record to retrieve -->
+				<label for="recordsInput">Number of Records to Retrieve:</label>
+				<br>
+				
+				<!-- Dropdown menu with 5 as the default number -->
+				<select name="recordsInput">
+					<option value="1">1</option>
+					<option value="5" selected>5</option>
+					<option value="10">10</option>
+				</select>
 
 			</form>
 		</div>
